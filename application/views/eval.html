@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matricula</title>
+    <script type="text/javascript" src="miscript.js">
+        
+    </script>
+
+		<style type="text/css">
+
+		form {
+        width:350px;
+        margin:0 auto;
+        font-family:Verdana, sans-serif;
+    	}
+
+    	legend {
+        color:#0481b1;
+        font-size:16px;
+        padding:0 10px;
+        background:#fff;
+        -moz-border-radius:4px;
+        box-shadow: 0 1px 5px rgba(4, 129, 177, 0.5);
+        padding:5px 10px;
+        text-transform:uppercase;
+        font-family:Helvetica, sans-serif;
+        font-weight:bold;
+    	}
+    fieldset {
+        border-radius:4px;
+        background: #fff; 
+        background: -moz-linear-gradient(#fff, #f9fdff);
+        background: -o-linear-gradient(#fff, #f9fdff);
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); /
+        background: -webkit-linear-gradient(#fff, #f9fdff);
+        padding:20px;
+        border-color:rgba(4, 129, 177, 0.4);
+    }
+    input,
+    textarea,select{
+        color: #373737;
+        background: #fff;
+        border: 1px solid #CCCCCC;
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-bottom:15px;
+
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    input[type="text"],
+    input[type="password"], select{
+        padding: 8px 6px;
+        height: auto;
+        width:280px;
+    }
+
+
+    textarea {
+        padding:3px;
+        width:96%;
+        height:100px;
+    }
+
+    input[type="submit"] {
+        padding: 19px 39px 18px 39px;
+        color: #FFF;
+        background-color: #4bc970;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      div {
+        width: 250px;
+        height: 100%;
+        float: left;
+      }
+
+      button{
+        border-radius: 5px;
+        font-size: 18px;
+        color: #FFF;
+        background-color: #94b8b8;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 40px;
+      }
+		</style>
+
+</head>
+<body id="cuerpo">
+        <div id="menu">
+        <button type="button" onclick="esconder()" id="boton1">Ejercicio1</button><p>
+        <button type="button" onclick="mostrar()" id="boton2">Ejercicio2</button><p>
+        <button type="button" onclick="cambiar()" id="boton3">Ejercicio3</button><p>
+        <button type="button" onclick="resaltar()" id="boton4">Ejercicio4</button><p>
+        <button type="button" onclick="color()" id="boton5">Ejercicio5</button><p>
+        <button type="button" onclick="fondo()" id="boton6">Ejercicio6</button><p>
+        <button type="button" onclick="validar()" id="boton7">Validar</button><p>
+        <button type="button" onclick="disable()" id="boton8">Deshabilitar</button><p>
+        <button type="button" onclick="crear()" id="boton9">crear</button><p>
+        </div>
+	<form >
+		<h1>Matricula</h1>
+		<fieldset id="matricula">
+			<legend>Matricula</legend>
+			<label>Carrera</label>
+			<select>
+				<optgroup>
+					<option>Computacion</option>
+					<option>Administracion</option>
+					<optgroup>Geomineria</optgroup>
+				</optgroup>
+			</select>
+
+			<label>Semestre</label>
+			<select>
+				<optgroup>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</optgroup>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos del Alumno</legend>
+				<label id="name">Nombre</label>
+				<input type="text" name="" id="nombre">
+				<label>Apellido</label>
+				<input type="text" name="" id="apellido">
+				<label>Sexo</label>
+				<input type="radio" name=""><label>Masculino</label>
+				<input type="radio" name=""><label>Femenino</label>
+				<label>Telefono</label>
+				<input type="text" name="">
+				<label>Direccion</label>
+				<input type="text" name="">
+		</fieldset>
+
+		<fieldset>
+			<legend>Antecedentes</legend>
+			<label>Empresa</label>
+			<input type="text" name="" id="empresa" oninput="company()">
+			<label>Cargo</label>
+			<input type="text" name="" id="cargo" onmousemove="genio()">
+			<label>Observacion</label>
+			<textarea></textarea>
+			<input type="submit" name="submit" id="boton" />
+		</fieldset>
+
+	</form>
+
+</body>
+</html>
